@@ -1,3 +1,4 @@
+#[warn(missing_docs)]
 mod cursor;
 mod event;
 mod raw_window_handle;
@@ -23,6 +24,7 @@ pub mod prelude {
 use bevy_app::prelude::*;
 use bevy_ecs::{event::Events, schedule::SystemLabel};
 
+/// A [`Plugin`] that defines an interface for windowing support in Bevy.
 pub struct WindowPlugin {
     /// Whether to create a window when added.
     ///
